@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 12px 0px 8px 55px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0 50px 0 0;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #727272;
+}
+
+nav .active a,
+nav a:hover {
+  background-color: #f60b0b;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 25px 0;
+}
+
+.text h1 {
+  margin-bottom: 10px;
+}
+
+/* From Uiverse.io by fanishah */
+.card {
+  background-image: url(./images/senna3.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 18rem;
+  height: 25rem;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
+}
+
+.card:hover {
+  transform: translateY(-1.5rem);
+  border: #f2295bf0 0.2em solid;
+  border-radius: 2.5rem 0 2.5rem 0;
+}
+
+.sobre {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.historia {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  height: 500px;
+  width: 700px;
+  margin-top: 10px;
+}
+
+.historia a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px;
+  width: 100%;
+  background-color: #dc2743;
+}
+
+.criador {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+/* From Uiverse.io by aadium */ 
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f2f2f2; */
+  padding: 15px 10px;
+  width: 250px;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
